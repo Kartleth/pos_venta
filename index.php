@@ -17,6 +17,7 @@ if (!empty($array[2])) {
         $parametro = trim($parametro, ",");
     }
 }
+require_once "Config/App/autoload.php";
 $dirControllers = "Controllers/".$controller.".php";
 if (file_exists($dirControllers)) {
     require_once $dirControllers;
